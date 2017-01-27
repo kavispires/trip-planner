@@ -4,15 +4,19 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "test": "mocha -w"
+    "start:production": "node app.js",
+    "start:dev": "nodemon -e html,css,js app.js",
+    "start": "npm run start:dev",
+    "build:css": "node-sass -w -r assets/stylesheets/style.scss -o public/stylesheets"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.4.7",
     "body-parser": "^1.16.0",
+    "bootstrap": "^3.3.7",
     "express": "^4.14.0",
+    "jquery": "^3.1.1",
     "marked": "^0.3.6",
     "morgan": "^1.7.0",
     "nunjucks": "^3.0.0",
@@ -24,6 +28,7 @@
     "chai": "^3.5.0",
     "chai-spies": "^0.7.1",
     "mocha": "^3.2.0",
+    "node-sass": "^4.3.0",
     "nodemon": "^1.11.0",
     "supertest": "^2.0.1",
     "supertest-as-promised": "^4.0.2"

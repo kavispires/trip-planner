@@ -6,8 +6,5 @@ const models = require('../models');
 module.exports = router;
 
 router.get('/', function (req, res, next) {
-	res.render('index', {data: 'hello'});
+	res.render('index', {});
 });
-
-
-
