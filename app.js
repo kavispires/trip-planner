@@ -15,6 +15,7 @@ app.engine('html', nunjucks.render);
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
+app.use('/font-awesome', express.static(__dirname + '/node_modules/font-awesome/css/font-awesome.min.css'));
 app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist'));
 app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist'));
 app.use(express.static(__dirname + '/public'));
