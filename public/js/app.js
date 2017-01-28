@@ -1,5 +1,5 @@
 $(document).ready(function() {
 
-	$('#googleMap').css('height', $(window).height() - 100);
+	$('#googleMap').css('height', $(window).height() - 50);
 
 });
