@@ -12,7 +12,8 @@ const models = require('./models');
 // configuration
 app.set('view engine', 'html');
 app.engine('html', nunjucks.render);
-app.use(bodyParser.urlencoded({extended: false}));
+
+app.use(bodyParser.urlencoded({extended: false})); // extended: false requires that the values can only be a string or an array
 app.use(bodyParser.json());
 
 app.use('/font-awesome', express.static(__dirname + '/node_modules/font-awesome/css/font-awesome.min.css'));

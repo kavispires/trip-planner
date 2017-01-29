@@ -37,33 +37,39 @@
                 <!-- /.dropdown -->
             </ul>
             <!-- /.navbar-top-links -->
-
-            <div class="navbar-default sidebar" role="navigation">
-                <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
-                        <li class="form-group">
-                          <label for="hotels-select">Select a Hotel</label>
-                            <select id="hotels-select" class="form-control">
-                              <option>select</option>
-                            </select>
-                        </li>
-                        <li class="form-group">
-                          <label for="restaurants-select">Select a Restaurant</label>
-                            <select id="restaurants-select" class="form-control">
-                              <option>select</option>
-                            </select>
-                        </li>                                   
-                    </ul>
-                </div>
-                <!-- /.sidebar-collapse -->
-            </div>
-            <!-- /.navbar-static-side -->
         </nav>
-        <div id="page-wrapper">
 
-          <iframe id="googleMap" width="100%" height="500px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=sedona%2C%20az&key=AIzaSyDAh9_n9UbzUcuI9kTvCSsZzQ_0Rs9A7kY" allowfullscreen></iframe>
-
-
-        </div>
-        <!-- /#page-wrapper -->
+        <div class="row" id="search-menu">
+            <div class="col-md-12">
+                <div class="form-group col-md-3">
+                  <label for="hotels-select">Select a Hotel</label>
+                    <select id="hotels-select" class="form-control">
+                      <option>select</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="restaurants-select">Select a Restaurant</label>
+                    <select id="restaurants-select" class="form-control">
+                      <option>select</option>
+                    </select>
+                </div>     
+                <div class="form-group col-md-3">
+                  <label for="activity-select">Select an Activity</label>
+                    <select id="activity-select" class="form-control">
+                      <option>select</option>
+                    </select>
+                </div>     
+                <div class="form-group col-md-3">
+                  <label for="restaurants-select">All Places</label>
+                    <select id="restaurants-select" class="form-control">
+                      <option>select</option>
+                    </select>
+                </div>                                                                     
+            </div>
+            <div class="row" id="map-section">
+                <div class="col-md-12">
+                    <iframe id="googleMap" width="100%" height="500px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=sedona%2C%20az&key=AIzaSyDAh9_n9UbzUcuI9kTvCSsZzQ_0Rs9A7kY" allowfullscreen></iframe>
+                </div>  
+            </div>
+           
 {% endblock %}
