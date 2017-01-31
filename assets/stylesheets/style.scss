@@ -27,6 +27,14 @@ body {
   overflow: hidden;
 }
 
+.info li {
+  padding:5px;
+}
+.info li:hover {
+  background: #f1f1f1;
+}
+
+
 .row {
     margin-right: 0px;
 }
@@ -35,6 +43,8 @@ body {
 .navbar-brand {
   font-size: 18pt;
   width: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;  
 }
 
 .navbar-right {
@@ -177,6 +187,8 @@ body {
     display: inline-block;
     width: 1em;
     margin-right: 0.5em;
+    top: 10px;
+
 }
 
 

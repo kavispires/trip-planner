@@ -14,13 +14,21 @@ body {
   background-color: #f8f8f8;
   overflow: hidden; }
 
+.info li {
+  padding: 5px; }
+
+.info li:hover {
+  background: #f1f1f1; }
+
 .row {
   margin-right: 0px; }
 
 /* style the Trip Planner text logo*/
 .navbar-brand {
   font-size: 18pt;
-  width: 250px; }
+  width: 250px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
 .navbar-right {
   margin-right: 5px; }
@@ -144,4 +152,5 @@ body {
   content: url("/img/trip-planner-logo.svg");
   display: inline-block;
   width: 1em;
-  margin-right: 0.5em; }
+  margin-right: 0.5em;
+  top: 10px; }

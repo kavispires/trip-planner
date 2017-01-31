@@ -23,88 +23,12 @@
     
     {% block content %}{% endblock %}	
 
-    <script>
-   function initMap() {
-        // Styles a map in night mode.
-        var map = new google.maps.Map(document.getElementById('googleMap'), {
-          center: {lat: 40.674, lng: -73.945},
-          zoom: 12,
-          styles: [
-            {
-              "featureType": "landscape",
-              "elementType": "geometry.fill",
-              "stylers": [
-                {
-                  "color": "#e4e2e0"
-                }
-              ]
-            },
-            {
-              "featureType": "poi",
-              "elementType": "geometry.fill",
-              "stylers": [
-                {
-                  "color": "#cdd1cc"
-                }
-              ]
-            },
-            {
-              "featureType": "poi.park",
-              "elementType": "labels.text.fill",
-              "stylers": [
-                {
-                  "color": "#07889b"
-                }
-              ]
-            },
-            {
-              "featureType": "road",
-              "elementType": "labels.icon",
-              "stylers": [
-                {
-                  "saturation": -70
-                }
-              ]
-            },
-            {
-              "featureType": "road.highway",
-              "elementType": "geometry.fill",
-              "stylers": [
-                {
-                  "color": "#e37222"
-                }
-              ]
-            },
-            {
-              "featureType": "road.highway",
-              "elementType": "geometry.stroke",
-              "stylers": [
-                {
-                  "color": "#e37222"
-                }
-              ]
-            },
-            {
-              "featureType": "water",
-              "elementType": "geometry.fill",
-              "stylers": [
-                {
-                  "color": "#61b5ba"
-                }
-              ]
-            }
-          ]
-        });
-      }
-      initMap();
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAh9_n9UbzUcuI9kTvCSsZzQ_0Rs9A7kY&callback=initMap"
-    async defer></script>
     <script src="/jquery/jquery.min.js"></script>
     <script src="/bootstrap/js/bootstrap.min.js"></script>
 
-    <script src="/js/app.js"></script>
-
+    <script src="/js/app.js"></script> <!-- needs to come before google map api call below !-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAh9_n9UbzUcuI9kTvCSsZzQ_0Rs9A7kY&callback=initMap"
+    async defer></script>
   </body>
 </html>
 
