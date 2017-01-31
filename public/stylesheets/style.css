@@ -23,7 +23,7 @@ body {
   width: 250px; }
 
 .navbar-right {
-  margin-right: 0; }
+  margin-right: 5px; }
 
 #wrapper {
   width: 100%; }
@@ -126,14 +126,15 @@ body {
   z-index: 1; }
 
 .btn-default.active, .btn-default:active, .open > .dropdown-toggle.btn-default {
-  color: #fff;
-  background-color: #E37222;
-  border-color: #adadad; }
+  background-color: #E37222; }
 
 .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open > .dropdown-toggle.btn-default.focus, .open > .dropdown-toggle.btn-default:focus, .open > .dropdown-toggle.btn-default:hover {
-  color: #333;
   background-color: #EEAA7B;
-  border-color: #8c8c8c; }
+  border-color: #E37222; }
+
+.btn-default:hover {
+  background-color: #EEAA7B;
+  border-color: #E37222; }
 
 #trip-planner-main-link::before {
   content: url("/img/trip-planner-logo.svg");

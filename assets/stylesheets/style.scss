@@ -38,7 +38,7 @@ body {
 }
 
 .navbar-right {
-  margin-right: 0;
+  margin-right: 5px;
 }
 
 #wrapper {
@@ -124,7 +124,6 @@ body {
   color: $teal;
   float: right;
   line-height: 32px;
-
 }
 
 .form-add:hover {
@@ -155,15 +154,17 @@ body {
 }
 
 .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
-    color: #fff;
     background-color: $tangerine;
-    border-color: #adadad;
 }
 
 .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
-    color: #333;
     background-color: $tan;
-    border-color: #8c8c8c;
+    border-color: $tangerine;
+}
+
+.btn-default:hover {
+    background-color: $tan;
+    border-color: $tangerine;
 }
 
 #trip-planner-main-link::before {
