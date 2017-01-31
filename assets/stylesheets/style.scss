@@ -1,86 +1,151 @@
+/* TYPOGRAPHY */
+
+* {
+  font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+/* COLOR SCHEME */
+
+$light-grey: #eef0f0;
+$tangerine: #E37222;
+$teal: #07889B;
+$powder: #66B9BF;
+$tan: #EEAA7B;
+
+/* BROWSER RESET */
+
+html,
 body {
-    background-color: #f8f8f8;
+    margin: 0,
+    padding: 0
+}
+
+/* CUSTOM STYLES */
+
+body {
+  background-color: #f8f8f8;
+  overflow: hidden;
 }
 
 /* style the Trip Planner text logo*/
 .navbar-brand {
-	font-size: 18pt;
-	width: 250px;
-	text-align: center;
+  font-size: 18pt;
+  width: 250px;
+}
+
+.navbar-right {
+  margin-right: 0;
 }
 
 #wrapper {
-    width: 100%;
-}
+  width: 100%; }
+
 #page-wrapper {
-    padding: 0 !important;
-    background-color: white;
-    line-height: 0px;
-}
+  padding: 0 !important;
+  background-color: white;
+  line-height: 0px; }
+
 .navbar-top-links {
-    margin-right: 0;
-}
+  margin-right: 0; }
+
 .navbar-top-links li {
-    display: inline-block;
-}
+  display: inline-block; }
+
 .navbar-top-links li:last-child {
-    margin-right: 15px;
-}
+  margin-right: 15px; }
+
 .navbar-top-links li a {
-    padding: 15px;
-    min-height: 50px;
-}
+  padding: 15px;
+  min-height: 50px; }
+
 .navbar-top-links .dropdown-menu li {
-    display: block;
-}
+  display: block; }
+
 .navbar-top-links .dropdown-menu li:last-child {
-    margin-right: 0;
-}
+  margin-right: 0; }
+
 .navbar-top-links .dropdown-menu li a {
-    padding: 3px 20px;
-    min-height: 0;
-}
+  padding: 3px 20px;
+  min-height: 0; }
+
 .navbar-top-links .dropdown-menu li a div {
-    white-space: normal;
-}
+  white-space: normal; }
+
 .navbar-top-links .dropdown-messages,
 .navbar-top-links .dropdown-tasks,
 .navbar-top-links .dropdown-alerts {
-    width: 310px;
-    min-width: 0;
-}
+  width: 310px;
+  min-width: 0; }
+
 .navbar-top-links .dropdown-messages {
-    margin-left: 5px;
-}
+  margin-left: 5px; }
+
 .navbar-top-links .dropdown-tasks {
-    margin-left: -59px;
-}
+  margin-left: -59px; }
+
 .navbar-top-links .dropdown-alerts {
-    margin-left: -123px;
-}
+  margin-left: -123px; }
+
 .navbar-top-links .dropdown-user {
-    right: 0;
-    left: auto;
+  right: 0;
+  left: auto; }
+
+.panel {
+    margin-bottom: 0;
 }
 
+.selector {
+  margin-top: 10px;
+}
+
+.form-group {
+  display: inline-block;
+}
+
+.form-control {
+  width: 80%;
+  float: left;
+}
+
+.form-control>select,
+.form-control.form-add {
+  display: inline-block;
+}
+
+.form-control>select {
+  float: left;
+}
+
+.form-add {
+  color: blue;
+  float: right;
+  line-height: 32px;
+  /*outline: 1px solid orange;*/
+}
+
+.form-add:hover {
+  color: cyan;
+}
+
+.form-remove {
+  margin-right: 20px;
+  color: red;
+  float: right;
+}
+
+.form-remove:hover {
+  color: hotpink;
+}
 
 #search-menu {
-    background: #f8f8f8;
-    height: 100px;
-    padding: 15px;
-    position: relative;
-    z-index: 100;
-    border-bottom:2px solid #999;
-}
-
-#search-menu .form-group  {
-
+  background: #f8f8f8;
+  height: 100px;
+  padding: 15px;
+  position: relative;
+  z-index: 100;
 }
 
 #map-section {
-position:relative;
-    top:11px;
-    z-index:1;
+  position: relative;
+  z-index: 1; 
 }
-
-
