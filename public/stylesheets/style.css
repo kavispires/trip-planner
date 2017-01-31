@@ -1,21 +1,26 @@
+/* TYPOGRAPHY */
 * {
-  font-family: 'Fira Sans Condensed', sans-serif;
-}
+  font-family: 'Fira Sans Condensed', sans-serif; }
 
+/* COLOR SCHEME */
+/* BROWSER RESET */
+html,
+body {
+  margin: 0;
+  padding: 0; }
+
+/* CUSTOM STYLES */
 body {
   background-color: #f8f8f8;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 /* style the Trip Planner text logo*/
 .navbar-brand {
   font-size: 18pt;
-  width: 250px;
-}
+  width: 250px; }
 
 .navbar-right {
-  margin-right: 0;
-}
+  margin-right: 0; }
 
 #wrapper {
   width: 100%; }
@@ -70,58 +75,50 @@ body {
   right: 0;
   left: auto; }
 
+.panel {
+  margin-bottom: 0; }
+
 .selector {
-  margin-top: 10px;
-}
+  margin-top: 10px; }
 
 .form-group {
-  display: inline-block;
-}
+  display: inline-block; }
 
 .form-control {
   width: 80%;
-  float: left;
-}
+  float: left; }
 
-.form-control>select,
+.form-control > select,
 .form-control.form-add {
-  display: inline-block;
-}
+  display: inline-block; }
 
-.form-control>select {
-  float: left;
-}
+.form-control > select {
+  float: left; }
 
 .form-add {
   color: blue;
   float: right;
   line-height: 32px;
-  /*outline: 1px solid orange;*/
-}
+  /*outline: 1px solid orange;*/ }
 
 .form-add:hover {
-  color: cyan;
-}
+  color: cyan; }
 
 .form-remove {
   margin-right: 20px;
   color: red;
-  float: right;
-}
+  float: right; }
 
 .form-remove:hover {
-  color: hotpink;
-}
+  color: hotpink; }
 
 #search-menu {
   background: #f8f8f8;
   height: 100px;
   padding: 15px;
   position: relative;
-  z-index: 100;
-}
+  z-index: 100; }
 
 #map-section {
   position: relative;
-  z-index: 1; 
-}
+  z-index: 1; }

@@ -42,6 +42,6 @@ app.use(function(err, req, res, next) {
 });
 
 // server
-if (!module.parent) app.listen('3000', () => console.log('\nListening on port 3000\n'));
+if (!module.parent) app.listen('8080', () => console.log('\nListening on port 8080\n'));
 
 module.exports = app;
