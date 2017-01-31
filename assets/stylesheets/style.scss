@@ -27,6 +27,10 @@ body {
   overflow: hidden;
 }
 
+.row {
+    margin-left: 0px; margin-right: 0px;
+}
+
 /* style the Trip Planner text logo*/
 .navbar-brand {
   font-size: 18pt;
@@ -117,24 +121,24 @@ body {
 }
 
 .form-add {
-  color: blue;
+  color: $teal;
   float: right;
   line-height: 32px;
-  /*outline: 1px solid orange;*/
+
 }
 
 .form-add:hover {
-  color: cyan;
+  color: $powder;
 }
 
 .form-remove {
   margin-right: 20px;
-  color: red;
+  color: $tangerine;
   float: right;
 }
 
 .form-remove:hover {
-  color: hotpink;
+  color: $tan;
 }
 
 #search-menu {
