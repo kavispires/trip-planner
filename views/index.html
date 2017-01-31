@@ -3,73 +3,95 @@
 {% block title %}Your Trip{% endblock %}
 
 {% block content %}
-       <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Trip Planner</a>
-            </div>
-            <!-- /.navbar-header -->
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand navbar-left" href="index.html">Trip Planner</a>
+    </div>
+    <!-- /.navbar-header -->
 
-            <ul class="nav navbar-top-links navbar-right">
-               
-                <!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-user -->
-                </li>
-                <!-- /.dropdown -->
-            </ul>
-            <!-- /.navbar-top-links -->
-        </nav>
+    <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div><!--/.nav-collapse --> 
+</nav>
 
-        <div class="row" id="search-menu">
-            <div class="col-md-12">
-                <div class="form-group col-md-3">
-                  <label for="hotels-select">Select a Hotel</label>
-                    <select id="hotels-select" class="form-control">
-                      <option>select</option>
-                    </select>
+<div class="row" id="app">
+    <div class="col-md-8" id="map-section">
+        <iframe id="googleMap" width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=sedona%2C%20az&key=AIzaSyDAh9_n9UbzUcuI9kTvCSsZzQ_0Rs9A7kY" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-4" id="side-bar">
+        <div class="row selector">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h4 class="hotels-select">Select a Hotel</h4>
+                    <div class="form-group col-md-12">
+                        <select id="hotels-select" class="form-control">
+                            <option>select</option>
+                            <option>select</option>
+                        </select>
+                        <a class="form-add" href="#"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></a>
+                    </div>
+                    <h4 class="restaurants-select">Select a Restaurant</h4>
+                    <div class="form-group col-md-12">
+                        <select id="restaurants-select" class="form-control">
+                            <option>select</option>
+                            <option>select</option>
+                        </select>
+                        <a class="form-add" href="#"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></a>
+                    </div> 
+                    <h4 class="activity-select">Select a Activity</h4>
+                    <div class="form-group col-md-12">
+                        <select id="activity-select" class="form-control">
+                            <option>select</option>
+                            <option>select</option>
+                        </select>
+                        <a class="form-add" href="#"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></a>
+                    </div>
                 </div>
-                <div class="form-group col-md-3">
-                  <label for="restaurants-select">Select a Restaurant</label>
-                    <select id="restaurants-select" class="form-control">
-                      <option>select</option>
-                    </select>
-                </div>     
-                <div class="form-group col-md-3">
-                  <label for="activity-select">Select an Activity</label>
-                    <select id="activity-select" class="form-control">
-                      <option>select</option>
-                    </select>
-                </div>     
-                <div class="form-group col-md-3">
-                  <label for="restaurants-select">All Places</label>
-                    <select id="restaurants-select" class="form-control">
-                      <option>select</option>
-                    </select>
-                </div>                                                                     
+            </div><!-- /panel -->
+        </div><!-- row -->
+        <div class="row plans">
+            <h3>Day 2</h3>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <nav class="schedule">
+                        <button class="btn btn-default">1</button>
+                        <button class="btn btn-default active">2</button>
+                        <button class="btn btn-default">3</button>
+                        <button class="btn btn-default">+</button>
+                    </nav>
+                </div>
+                <div class="panel-body info">
+                    <h4>My Hotel</h4>
+                    <ul class="my-hotel">
+                        <li><span class="info-item">Hotel name</span><a class="form-remove" href="#"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></a></li>
+                    </ul>
+                    <h4>My Restaurants</h4>
+                    <ul class="my-restaurants">
+                        <li><span class="info-item">Restaurant name</span><a class="form-remove" href="#"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></a></li>
+                        <li><span class="info-item">Another restaurant name</span><a class="form-remove" href="#"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></a></li>
+                    </ul>
+                    <h4>My Activites</h4>
+                    <ul class="my-activity">
+                        <li><span class="info-item">First activity name</span><a class="form-remove" href="#"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></a></li>
+                        <li><span class="info-item">Second activity name</span><a class="form-remove" href="#"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="row" id="map-section">
-                <div class="col-md-12">
-                    <iframe id="googleMap" width="100%" height="500px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=sedona%2C%20az&key=AIzaSyDAh9_n9UbzUcuI9kTvCSsZzQ_0Rs9A7kY" allowfullscreen></iframe>
-                </div>  
-            </div>
-           
+        </div>
+</div><!-- /plans -->
+
+</div>                                                                     
+</div>
+
+
 {% endblock %}

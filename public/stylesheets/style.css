@@ -1,11 +1,21 @@
+* {
+  font-family: 'Fira Sans Condensed', sans-serif;
+}
+
 body {
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
 
 /* style the Trip Planner text logo*/
 .navbar-brand {
   font-size: 18pt;
   width: 250px;
-  text-align: center; }
+}
+
+.navbar-right {
+  margin-right: 0;
+}
 
 #wrapper {
   width: 100%; }
@@ -60,15 +70,58 @@ body {
   right: 0;
   left: auto; }
 
+.selector {
+  margin-top: 10px;
+}
+
+.form-group {
+  display: inline-block;
+}
+
+.form-control {
+  width: 80%;
+  float: left;
+}
+
+.form-control>select,
+.form-control.form-add {
+  display: inline-block;
+}
+
+.form-control>select {
+  float: left;
+}
+
+.form-add {
+  color: blue;
+  float: right;
+  line-height: 32px;
+  /*outline: 1px solid orange;*/
+}
+
+.form-add:hover {
+  color: cyan;
+}
+
+.form-remove {
+  margin-right: 20px;
+  color: red;
+  float: right;
+}
+
+.form-remove:hover {
+  color: hotpink;
+}
+
 #search-menu {
   background: #f8f8f8;
   height: 100px;
   padding: 15px;
   position: relative;
   z-index: 100;
-  border-bottom: 2px solid #999; }
+}
 
 #map-section {
   position: relative;
-  top: 11px;
-  z-index: 1; }
+  z-index: 1; 
+}
