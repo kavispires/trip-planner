@@ -124,6 +124,10 @@ body {
   color: $teal;
   float: right;
   line-height: 32px;
+  span {
+    font-size: 1.5em;
+    line-height: 32px;
+  }
 }
 
 .form-add:hover {
@@ -155,6 +159,7 @@ body {
 
 .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
     background-color: $tangerine;
+    border-color: $tan;
 }
 
 .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
