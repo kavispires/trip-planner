@@ -28,7 +28,7 @@ body {
 }
 
 .row {
-    margin-left: 0px; margin-right: 0px;
+    margin-right: 0px;
 }
 
 /* style the Trip Planner text logo*/
@@ -107,7 +107,7 @@ body {
 }
 
 .form-control {
-  width: 80%;
+  width: 90%;
   float: left;
 }
 
@@ -153,3 +153,25 @@ body {
   position: relative;
   z-index: 1; 
 }
+
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
+    color: #fff;
+    background-color: $tangerine;
+    border-color: #adadad;
+}
+
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+    color: #333;
+    background-color: $tan;
+    border-color: #8c8c8c;
+}
+
+#trip-planner-main-link::before {
+    content: url("/img/trip-planner-logo.svg");
+    display: inline-block;
+    width: 1em;
+    margin-right: 0.5em;
+}
+
+
+
