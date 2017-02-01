@@ -4,6 +4,9 @@ var marked = require('marked');
 const Place = require('./place');
 
 var Restaurant = db.define('restaurant', {
+    name: {
+        type: Sequelize.STRING
+    },	
     cuisine: {
         type: Sequelize.STRING
     },

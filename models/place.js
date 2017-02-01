@@ -2,7 +2,7 @@ var Sequelize = require('sequelize');
 const db = require('./index');
 var marked = require('marked');
 
-var Place = db.define('place', {
+var Place = db.define('place', {    
     address: {
         type: Sequelize.STRING
     },

@@ -14,11 +14,22 @@ body {
   background-color: #f8f8f8;
   overflow: hidden; }
 
-.info li {
-  padding: 5px; }
-
-.info li:hover {
-  background: #f1f1f1; }
+.info
+ul.itinerary {
+  list-style: none;
+  padding-left: 0px; }
+  .info
+ul.itinerary li {
+    padding: 10px;
+    padding-right: 0px;
+    padding-left: 20px;
+    background: #f1f1f1; }
+  .info
+ul.itinerary li:hover {
+    background: #E37222; }
+    .info
+ul.itinerary li:hover span.form-remove {
+      color: #fff; }
 
 .row {
   margin-right: 0px; }
@@ -120,7 +131,9 @@ body {
 .form-remove {
   margin-right: 20px;
   color: #E37222;
-  float: right; }
+  float: right;
+  font-size: 15pt;
+  top: 0px; }
 
 .form-remove:hover {
   color: #EEAA7B; }

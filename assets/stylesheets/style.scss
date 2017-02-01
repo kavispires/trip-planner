@@ -27,12 +27,30 @@ body {
   overflow: hidden;
 }
 
-.info li {
-  padding:5px;
+
+.info 
+
+ul.itinerary {
+  list-style: none;
+  padding-left:0px;
+  li {
+    padding:10px;
+    padding-right:0px;
+    padding-left: 20px;
+    background: #f1f1f1;
+
+  }
+  li:hover {
+    background: #E37222;
+    span.form-remove {
+      color: #fff;
+    }    
+  }
+
 }
-.info li:hover {
-  background: #f1f1f1;
-}
+
+
+
 
 
 .row {
@@ -148,6 +166,8 @@ body {
   margin-right: 20px;
   color: $tangerine;
   float: right;
+  font-size: 15pt;
+  top: 0px;
 }
 
 .form-remove:hover {

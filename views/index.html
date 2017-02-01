@@ -26,7 +26,7 @@
 
 <div class="row" id="app">
     <div class="col-md-8" id="map-section">
-        <div id="googleMap"></div>
+        <div id="map-canvas"></div>
     </div>
     <div class="col-md-4" id="side-bar">
         <div class="row selector">
@@ -34,64 +34,54 @@
                 <div class="panel-body">
                     <h4 class="hotels-select">Select a Hotel</h4>
                     <div class="form-group col-md-12">
-                        <select id="hotels-select" class="form-control">
-                            <option>select</option>
-                            <option>select</option>
-                        </select>
-                        <a class="form-add" href="#"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></a>
+                        <select data-type="hotel" id="hotel-choices" class="form-control"></select>
+                        <a class="form-add" id="hotel-button" data-action="add" href="#"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></a>
                     </div>
                     <h4 class="restaurants-select">Select a Restaurant</h4>
                     <div class="form-group col-md-12">
-                        <select id="restaurants-select" class="form-control">
-                            <option>select</option>
-                            <option>select</option>
-                        </select>
-                        <a class="form-add" href="#"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></a>
+                        <select data-type="restaurant" id="restaurant-choices" class="form-control"></select>
+                        <a class="form-add" id="restaurant-button" data-action="add" href="#"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></a>
                     </div> 
                     <h4 class="activity-select">Select a Activity</h4>
                     <div class="form-group col-md-12">
-                        <select id="activity-select" class="form-control">
-                            <option>select</option>
-                            <option>select</option>
-                        </select>
-                        <a class="form-add" href="#"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></a>
+                        <select data-type="activity" id="activity-choices" class="form-control"></select>
+                        <a class="form-add" id="activity-button" data-action="add" href="#"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></a>
                     </div>
                 </div>
             </div><!-- /panel -->
         </div><!-- row -->
-        <div class="row plans">
-            <h3>Day 2</h3>
-            <div class="panel panel-default">
+        <div class="row plans"> 
+            <div class="panel panel-default" style="margin-top:18px">
                 <div class="panel-heading">
-                    <nav class="schedule">
-                        <button class="btn btn-default">1</button>
-                        <button class="btn btn-default active">2</button>
-                        <button class="btn btn-default">3</button>
-                        <button class="btn btn-default">+</button>
+                    <div class="schedule day-buttons" id="day-buttons">
+                        <button class="btn btn-default day-btn current-day" id="day-1">1</button>
+                        <button class="btn btn-circle " id="day-add">+</button>
                     </nav>
                 </div>
-                <div class="panel-body info">
-                    <h4>My Hotel</h4>
-                    <ul class="my-hotel">
-                        <li><span class="info-item">Hotel name</span><a class="form-remove" href="#"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></a></li>
-                    </ul>
-                    <h4>My Restaurants</h4>
-                    <ul class="my-restaurants">
-                        <li><span class="info-item">Restaurant name</span><a class="form-remove" href="#"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></a></li>
-                        <li><span class="info-item">Another restaurant name</span><a class="form-remove" href="#"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></a></li>
-                    </ul>
-                    <h4>My Activites</h4>
-                    <ul class="my-activity">
-                        <li><span class="info-item">First activity name</span><a class="form-remove" href="#"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></a></li>
-                        <li><span class="info-item">Second activity name</span><a class="form-remove" href="#"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></a></li>
-                    </ul>
-                </div>
+            </div>  
+            <div id="day-title" style="">
+                <h3 class="text" style="padding-left:15px; margin-bottom:0px;">Day 1
+                    <span class="glyphicon glyphicon-remove-sign remove" aria-hidden="true" style="font-size:15pt; padding-left: 5px; top:2px"></span>
+                </h3>
+            </div>             
+            <div class="panel-body info">
+                <h4>My Hotel</h4>
+                <ul id="hotel-list" class="itinerary"></ul>
+                <h4>My Restaurants</h4>
+                <ul id="restaurant-list" class="itinerary"></ul>
+                <h4>My Activites</h4>
+                <ul id="activity-list" class="itinerary"></ul>
             </div>
         </div>
 </div><!-- /plans -->
 
 </div>                                                                     
-</div>
 
+
+<script>
+  var hotels = {{ hotels | dump | safe }};
+  var restaurants = {{ restaurants | dump | safe }};
+  var activities = {{ activities | dump | safe }};
+</script>
 
 {% endblock %}
